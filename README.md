@@ -2,8 +2,6 @@ I think pycharm should automatically download the requirements.txt file if not t
 
 Python version == 3.9
 
-http://127.0.0.1:8000/mockapp/get/
-
-This is the link to get data. 
+This is the link to get data: http://127.0.0.1:8000/mockapp/get/
 
 To edit the json (mockapp/views.py)
