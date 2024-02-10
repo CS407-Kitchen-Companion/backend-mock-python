@@ -1,6 +1,6 @@
 Python version == 3.9
 
-I think pycharm should automatically download the requirements.txt file if not then use (pip install requirements.txt)
+I think pycharm should automatically download the requirements.txt file if not then use (pip install -r requirements.txt)
 
 To start the server, navigate to home directory (the one with manage.py) and run "python manage.py runserver"
 
