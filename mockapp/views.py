@@ -45,3 +45,21 @@ def searchButton(request):
         "status_code": 405  # Method Not Allowed
     }
     return JsonResponse(error_data, status=405)
+
+
+def list(request):
+    if request.method == 'GET':
+        keyword = request.GET.get('keyword', None)
+        if keyword is not None:
+            recipe = [{"id": keyword, "Title": "Chocolate Cake", "Ingredients": ["dessert", "chocolate", "cake"],"Body": "samplebody"}]
+            response_data = {
+                "recipe": recipe
+            }
+            return JsonResponse(response_data)
+        else:
+            recipe = [{"id": 1, "Title": "Chocolate Cake", "Ingredients": ["dessert", "chocolate", "cake"],
+                       "Body": "samplebody"}]
+            response_data = {
+                "recipe": recipe
+            }
+            return JsonResponse(response_data)
